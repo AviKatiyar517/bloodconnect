@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodConnect - Search Results</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="brand">
+            <span class="heart">&#10084;</span> BloodConnect
+        </div>
+        <a href="index.html" class="btn btn-outline">New Search</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- RESULT HEADER -->
+        <div class="result-header">
+            <p id="result-summary">Searching...</p>
+        </div>
+
+        <!-- DONOR CARDS -->
+        <div id="donor-list"></div>
+
+        <!-- NO RESULTS -->
+        <div id="no-results" class="no-results" style="display:none;">
+            <div class="no-results-icon">&#128547;</div>
+            <h3>No donors found</h3>
+            <p>No available donors found for this blood group in this city.</p>
+            <p>You can <a href="register.html">register as a donor</a> to help others!</p>
+        </div>
+
+        <!-- SAFETY NOTE -->
+        <div class="safety-note" id="safety-note" style="display:none;">
+            &#9432; Always verify donor eligibility before donation. Consult a doctor if needed.
+        </div>
+
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>
